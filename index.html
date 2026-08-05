@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="fmJ9R382sNr9y1zZ-Ipsj0F0NYWkb9pARzwDpt6LDm4" />
+
+    <!--
+      Per-page title, description, canonical, robots, Open Graph, and Twitter Card
+      are injected by react-helmet-async in each page component (SEOHead).
+      Only truly static/global meta tags that never change per-route live here.
+    -->
+
+    <!--
+      Default title, description, and Open Graph tags.
+      These are static fallbacks read by WhatsApp / Facebook / Twitter crawlers
+      before JavaScript loads. react-helmet-async overrides them per-page at runtime.
+    -->
+    <title>دبي فانز | وكالة التسويق الرقمي في الإمارات</title>
+    <meta name="description" content="دبي فانز – وكالة تسويق رقمي متخصصة في الإمارات. إدارة حملات فيسبوك وإنستغرام وتيك توك وجوجل، تصميم مواقع، SEO، وأدوات تسويق مجانية." />
+    <!-- Homepage canonical — overridden per-route by the prerender script -->
+    <link rel="canonical" href="https://mtuaefans.com/" />
+
+    <!-- Open Graph — WhatsApp / Facebook / LinkedIn previews -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:site_name"   content="دبي فانز" />
+    <meta property="og:locale"      content="ar_AE" />
+    <meta property="og:url"         content="https://mtuaefans.com/" />
+    <meta property="og:title"       content="دبي فانز | وكالة التسويق الرقمي في الإمارات" />
+    <meta property="og:description" content="دبي فانز – وكالة تسويق رقمي متخصصة في الإمارات. إدارة حملات فيسبوك وإنستغرام وتيك توك وجوجل، تصميم مواقع، SEO، وأدوات تسويق مجانية." />
+    <meta property="og:image"        content="https://mtuaefans.com/hero-marketing.webp" />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt"    content="دبي فانز - وكالة التسويق الرقمي في الإمارات" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:site"        content="@mtuaefans" />
+    <meta name="twitter:title"       content="دبي فانز | وكالة التسويق الرقمي في الإمارات" />
+    <meta name="twitter:description" content="دبي فانز – وكالة تسويق رقمي متخصصة في الإمارات. إدارة حملات فيسبوك وإنستغرام وتيك توك وجوجل، تصميم مواقع، SEO، وأدوات تسويق مجانية." />
+    <meta name="twitter:image"       content="https://mtuaefans.com/hero-marketing.webp" />
+
+    <!-- Global site-wide meta (non-page-specific) -->
+    <meta name="author" content="دبي فانز - Dubai Fans Digital Marketing" />
+    <meta name="geo.region" content="AE-DU" />
+    <meta name="geo.placename" content="Dubai, United Arab Emirates" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="general" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- Favicon & PWA -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#CC0000" />
+
+    <!-- Preload critical images (WebP first, PNG fallback for prerender) -->
+    <link rel="preload" as="image" href="/hero-marketing.webp" type="image/webp" />
+    <link rel="preload" as="image" href="/hero-marketing.png" type="image/png" />
+
+    <!-- Fonts: Cairo Arabic — async (non-render-blocking) load.
+         Weights trimmed to 400/600/700/800/900 (300 unused in design system).
+         media="print" + onload trick defers parse until after first paint. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" /></noscript>
+
+    <!-- JSON-LD: LocalBusiness (Rich Results compliant) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://mtuaefans.com/#localbusiness",
+      "name": "دبي فانز",
+      "alternateName": ["Dubai Fans", "Dubai Fans Digital Marketing"],
+      "description": "وكالة تسويق رقمي متخصصة في الإمارات. إدارة الحملات الإعلانية على Meta وGoogle وTikTok وSnapchat، تصميم المواقع والمتاجر الإلكترونية، تحسين محركات البحث SEO، الجرافيك والهوية البصرية، التصوير الاحترافي، إدارة السوشيال ميديا، وأدوات تسويق مجانية.",
+      "url": "https://mtuaefans.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mtuaefans.com/favicon.svg",
+        "width": 512,
+        "height": 512
+      },
+      "image": [
+        "https://mtuaefans.com/hero-marketing.webp",
+        "https://mtuaefans.com/ads-campaigns.webp"
+      ],
+      "telephone": ["+971551981564", "+971568952775"],
+      "email": "info@mtuaefans.sbs",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "دبي",
+        "addressLocality": "دبي",
+        "addressRegion": "دبي",
+        "postalCode": "00000",
+        "addressCountry": "AE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "25.2048",
+        "longitude": "55.2708"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],
+          "opens": "09:00",
+          "closes": "23:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday"],
+          "opens": "14:00",
+          "closes": "22:00"
+        }
+      ],
+      "priceRange": "$$",
+      "currenciesAccepted": "AED",
+      "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+      "sameAs": [
+        "https://www.instagram.com/mtuaefans",
+        "https://www.facebook.com/mtuaefans",
+        "https://www.tiktok.com/@mtuaefans",
+        "https://www.youtube.com/@mtuaefans",
+        "https://twitter.com/mtuaefans",
+        "https://www.linkedin.com/in/mahmoudterak-mt-050a97427/",
+        "https://mtuaefans.com"
+      ],
+      "areaServed": [
+        { "@type": "City",    "name": "Dubai",        "sameAs": "https://www.wikidata.org/wiki/Q612" },
+        { "@type": "City",    "name": "Abu Dhabi",    "sameAs": "https://www.wikidata.org/wiki/Q46862" },
+        { "@type": "City",    "name": "Sharjah",      "sameAs": "https://www.wikidata.org/wiki/Q166713" },
+        { "@type": "Country", "name": "United Arab Emirates", "sameAs": "https://www.wikidata.org/wiki/Q878" }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Mahmoud Tariq",
+        "url": "https://mtcoach.blog",
+        "sameAs": [
+          "https://www.instagram.com/mahmoudtariqcoach",
+          "https://www.linkedin.com/in/mahmoudterak-mt-050a97427/"
+        ]
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "خدمات التسويق الرقمي — دبي فانز",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "إدارة الحملات الإعلانية على Meta وGoogle وTikTok وSnapchat" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "تصميم المواقع الإلكترونية والمتاجر مع SEO" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "تحسين محركات البحث SEO" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "إدارة السوشيال ميديا (Instagram, TikTok, Facebook)" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "الجرافيك وتصميم الهوية البصرية" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "التصوير الاحترافي للمنتجات والشركات" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "تزويد المتابعين والمشاهدات" } }
+        ]
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite + SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "دبي فانز",
+      "url": "https://mtuaefans.com",
+      "inLanguage": "ar",
+      "description": "وكالة التسويق الرقمي الرائدة في الإمارات مع أدوات SEO مجانية وتحليل ذكي للأعمال",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://mtuaefans.com/tools?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: Free Tools as WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "أدوات التسويق الرقمي المجانية - دبي فانز",
+      "url": "https://mtuaefans.com/tools",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web Browser",
+      "inLanguage": "ar",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "AED" },
+      "description": "مجموعة أدوات تسويق رقمي مجانية: مُولّد كلمات مفتاحية، فاحص سيو سريع، مُولّد عنوان ووصف سيو، حاسبة ROI وROAS، حاسبة CAC وCLV، حاسبة نسبة التحويل، مُولّد أفكار محتوى، مُولّد هاشتاجات إنستغرام وتيك توك، مُولّد رابط واتساب، مُنشئ توقيع البريد الإلكتروني.",
+      "featureList": [
+        "مُولّد الكلمات المفتاحية بالذكاء الاصطناعي",
+        "فاحص السيو السريع",
+        "مُولّد عنوان ووصف سيو (Meta Generator)",
+        "حاسبة عائد الاستثمار الإعلاني ROI و ROAS",
+        "حاسبة تكلفة العميل CAC وقيمته CLV",
+        "حاسبة نسبة التحويل Conversion Rate",
+        "مُولّد أفكار المحتوى للسوشيال ميديا",
+        "مقاسات صور السوشيال ميديا",
+        "مُولّد الهاشتاجات لإنستغرام وتيك توك",
+        "مُولّد رابط واتساب مع QR Code",
+        "مُنشئ التوقيع الإلكتروني الاحترافي"
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: Free Analysis Tool -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "تحليل مشروعك بالذكاء الاصطناعي - دبي فانز",
+      "url": "https://mtuaefans.com/analyze",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web Browser",
+      "inLanguage": "ar",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "AED" },
+      "description": "أداة تحليل مجانية تستخدم الذكاء الاصطناعي لتحليل موقعك أو حسابات السوشيال ميديا (إنستغرام، فيسبوك، تيك توك، سناب شات، جوجل) وتقديم توصيات مخصصة لزيادة المبيعات."
+    }
+    </script>
+
+    <!-- JSON-LD: Blog entity (no hardcoded blogPost list — per-post BlogPosting is
+         injected dynamically by the prerender script for each /blog/:id page) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "@id": "https://mtuaefans.com/blog#blog",
+      "name": "مدونة دبي فانز للتسويق الرقمي",
+      "url": "https://mtuaefans.com/blog",
+      "inLanguage": "ar",
+      "description": "أحدث المقالات والاستراتيجيات في التسويق الرقمي، السيو، إدارة السوشيال ميديا، وتنمية الأعمال في الإمارات والخليج.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "دبي فانز",
+        "url": "https://mtuaefans.com",
+        "@id": "https://mtuaefans.com/#localbusiness"
+      }
+    }
+    </script>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- reCAPTCHA Enterprise — invisible, score-based -->
+    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+  </body>
+</html>
